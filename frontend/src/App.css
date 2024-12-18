@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      90deg,
+      #3c3b6e 25%, /* Dark blue */
+      #ffffff 25%, #ffffff 50%, /* White */
+      #e31c34 50%, #e31c34 75%, /* Red */
+      #ffffff 75%, #ffffff 100% /* White */
+    );
+  background-size: 100% 300px; /* Creates repeating stripes */
+  background-repeat: repeat-y;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent for contrast */
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 48px;
+  color: #fff; /* White text for contrast */
+  margin: 0;
+  font-weight: 700;
+}
+
+.subTitle {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.prediction-container {
+  margin-top: 40px;
+}
+
+.predict-button {
+  background-color: #e31c34; /* Red */
+  color: white;
+  font-size: 22px;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  border: 2px solid black; 
+}
+
+.predict-button:hover {
+  background-color: #c11e2a; /* Darker red */
+  transform: scale(1.05);
+ 
+}
+
+.tracked-message {
+  margin-top: 20px;
+  background-color: #4caf50; /* Green for confirmation */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.details {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 700px;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .subTitle {
+    font-size: 18px;
+  }
+
+  .predict-button {
+    font-size: 18px;
+    padding: 15px 40px;
+  }
+
+  .details {
+    width: 90%;
+  }
+}

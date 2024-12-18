@@ -109,7 +109,7 @@ function App() {
     };
 
     try {
-      await axios.post('http://localhost:5000/track', data);
+      await axios.post('https://fakewebdatacollector.onrender.com/track', data);
       setTracked(true); // Show the tracking confirmation message
       console.log('Data sent');
 
